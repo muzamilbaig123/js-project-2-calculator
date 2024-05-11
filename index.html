@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="error">
+            <h1></h1>
+        </div>
+        <div class="calculator">
+            <div class="firstnum">
+               <label> <span>Add Number</span> <input type="text" name="num1" value="" placeholder="First Number" /></label>
+            </div>
+            <div class="lastnum">
+               <label><span>Add Number</span> <input type="text" name="num2" value="" placeholder="Last Number" /></label> 
+            </div>
+            <div class="allopertor">
+                <label><span>Add Operators</span> <input type="text" name="operator" value="" placeholder="+ | - | * | / | %" /></label> 
+             </div>
+            <div class="output">
+                <h1></h1>
+            </div>
+            <div class="operator">
+                <button onclick="total()">Total</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
